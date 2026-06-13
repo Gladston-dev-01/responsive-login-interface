@@ -1,6 +1,106 @@
 @charset "UTF-8";
-/*
-Paleta de cores
-verde: #49a09d
-lilas: #5f2c82
-*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #5f2c82;
+}
+main {
+  background-color: white;
+  margin: 64px auto auto auto;
+  width: 250px;
+  border-radius: 16px;
+}
+section#login h1 {
+  text-align: center;
+  padding: 8px 0px 8px 0px;
+}
+div#imagem img {
+  width: 250px;
+  border-radius: 16px 16px 0 0;
+  display: block;
+}
+div#formulario {
+  padding: 8px;
+}
+div#formulario p {
+  text-align: justify;
+  font-size: 0.8em;
+}
+div#email {
+  height: 40px;
+  background-color: #5f2c82;
+  border-radius: 8px;
+}
+div#senha {
+  margin-top: 5px;
+  height: 40px;
+  background-color: #5f2c82;
+  border-radius: 8px;
+}
+div#senha input#isenha {
+  position: absolute;
+  border-radius: 8px;
+  height: 36px;
+  width: 180px;
+  border: none;
+  background-color: #94cfcd;
+  font-size: 1em;
+  margin: 2px 0 0 0;
+  padding: 0px 0px 0px 6px;
+}
+form {
+  padding-top: 4px;
+}
+form span#user {
+  font-size: 30px;
+  color: white;
+  padding: 8px;
+}
+form span#senha {
+  font-size: 30px;
+  color: white;
+  padding: 8px;
+}
+form input#iemail {
+  position: absolute;
+  border-radius: 8px;
+  height: 36px;
+  width: 180px;
+  border: none;
+  background-color: #94cfcd;
+  font-size: 1em;
+  margin: 2px 0 0 0;
+  padding: 0px 0px 0px 6px;
+}
+input#bentrar {
+  cursor: pointer;
+  margin: 5px 0px 0px 0px;
+  display: block;
+  background-color: #53aaa7;
+  border: none;
+  height: 40px;
+  width: 230px;
+  border-radius: 8px;
+  color: white;
+  font-size: 1em;
+}
+input#bentrar:hover {
+  background-color: #397472;
+}
+input#besqueci {
+  cursor: pointer;
+  border: solid 1px #49a09d;
+  border-radius: 8px;
+  margin: 5px 0px 0px 0px;
+  display: block;
+  color: #397472;
+  height: 40px;
+  width: 230px;
+  font-size: 1em;
+}
+input#besqueci:hover {
+  background-color: aquamarine;
+}
