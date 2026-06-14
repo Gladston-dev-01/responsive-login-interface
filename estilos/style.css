@@ -1,5 +1,6 @@
 @charset "UTF-8";
 * {
+  transition: all 0.3s ease;
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -90,7 +91,8 @@ input#bentrar {
 input#bentrar:hover {
   background-color: #397472;
 }
-input#besqueci {
+a#besqueci {
+  text-decoration: none;
   cursor: pointer;
   border: solid 1px #49a09d;
   border-radius: 8px;
@@ -100,7 +102,115 @@ input#besqueci {
   height: 40px;
   width: 230px;
   font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-input#besqueci:hover {
+a#besqueci:hover {
   background-color: aquamarine;
+}
+
+/*tablet*/
+@media (min-width: 768px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body {
+    background: linear-gradient(to bottom, #5f2c82, #39a0a1);
+  }
+  main {
+    width: 600px;
+    height: 290px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  form input#iemail {
+    width: 226px;
+  }
+  div#senha input#isenha {
+    width: 226px;
+  }
+  section#login {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  div#imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  div#imagem img {
+    width: 280px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 16px 0 0 16px;
+  }
+  div#formulario {
+    flex: 1;
+    padding: 20px;
+  }
+  br {
+    display: none;
+  }
+  input#bentrar {
+    width: 280px;
+  }
+  a#besqueci {
+    width: 280px;
+  }
+}
+@media (min-width: 992px) {
+  main {
+    width: 900px;
+    height: 350px;
+  }
+  div#formulario {
+    h1 {
+      margin: -40px 0px 0px 0px;
+    }
+    p {
+      font-size: 0.9em;
+      margin: 10px 0px 20px 0px;
+    }
+  }
+  section#login {
+    flex-direction: row-reverse;
+  }
+  div#imagem {
+    flex: 1;
+  }
+  div#imagem img {
+    width: 100%;
+    height: 350px;
+    border-radius: 0 16px 16px 0;
+  }
+  div#formulario {
+    flex: 1;
+    padding: 30px;
+  }
+  form input#iemail {
+    width: 100%;
+  }
+  div#senha input#isenha {
+    width: 100%;
+  }
+  input#bentrar {
+    width: 100%;
+  }
+  a#besqueci {
+    width: 100%;
+  }
+  form input#iemail {
+    width: 366px;
+  }
+  div#senha input#isenha {
+    width: 366px;
+  }
 }
